@@ -1,26 +1,25 @@
 {
-  "name": "shopify-starter",
+  "name": "Khaylo",
   "version": "0.0.0",
-  "description": "shopify theme",
+  "description": "Khaylo Shop",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gwincr11/shopify-starter.git"
+    "url": "https://github.com/johnatanuribe/Shop.git"
   },
-  "author": "Cory Gwin",
+  "author": "Johnatan Uribe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gwincr11/shopify-starter/issues"
+    "url": "https://github.com/johnatanuribe/Shop.git/issues"
   },
-  "homepage": "https://github.com/gwincr11/shopify-starter",
+  "homepage": "https://github.com/johnatanuribe/Shop.git",
+  
   "devDependencies": {
-    "growl": "^1.7.0",
     "grunt": "^0.4.4",
     "grunt-bower-concat": "^0.2.4",
-    "grunt-contrib-compass": "^0.7.2",
     "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-jshint": "^0.10.0",
@@ -28,6 +27,7 @@
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-modernizr": "^0.5.2",
-    "grunt-shopify": "^0.5.0"
+    "grunt-shopify": "^0.5.0",
+    "node-bourbon": "^1.2.3"
   }
 }

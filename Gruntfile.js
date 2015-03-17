@@ -1,17 +1,22 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    //run compass on css
-    compass: {
+    //run Sass with bourbon on css
+    sass: {
       dist: {
         options: {
-          sassDir: 'sass',
-          cssDir: 'shop/assets',
-          specify: 'sass/application.scss',
-          outputStyle: 'compressed'
+          // loadPath: require('node-bourbon').with('other/path', 'another/path') 
+          // - or - 
+          style: 'expanded',
+          loadPath: require('node-bourbon').includePaths
+        },
+        files: {
+          'shop/assets': 'sass/application.scss'
+
         }
       }
     },
+
     //concat bower packages
     bower_concat: {
       all: {
@@ -121,7 +126,6 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
